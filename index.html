@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion Prediction</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    #user-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 400px;
+      margin-bottom: 10px;
+    }
+    #predict-button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #prediction {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tell me how you're feeling</h1>
+    <textarea id="user-input" placeholder="Enter your text here..."></textarea>
+    <button id="predict-button">Predict Emotion</button>
+    <p id="prediction"></p>
+  </div>
+
+  <script>
+    document.getElementById('predict-button').addEventListener('click', function() {
+      const userInput = document.getElementById('user-input').value;
+      const predictedEmotion = 'This feature is currently under development.';
+
+      document.getElementById('prediction').textContent = predictedEmotion;
+    });
+  </script>
+</body>
+</html>
